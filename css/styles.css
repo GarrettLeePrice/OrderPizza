@@ -4,6 +4,12 @@
   margin-top: 20px;
 }
 
+.jumbotron h1 {
+  font-size: 80pt;
+  color: pink;
+  text-shadow: purple: 50px;
+}
+
 body {
   background-color: #f0ebfa;
 }
@@ -15,9 +21,24 @@ body {
 .video {
   position: absolute;
   margin: auto;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
   max-height: 100%;
+}
+
+.box {
+   width: 115px;
+   height: 50px;
+   border:1px solid purple;
+   background-color: pink;
+}
+
+p {
+  color: purple;
+  padding-top: 7px;
+  font-size: 14pt;
+  font-style: italic:bold;
+  text-align: center;
 }

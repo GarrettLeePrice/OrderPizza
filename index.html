@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gimme PIZZA!!</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>GIMME PIZZA!!</hi>
+<head>
+  <title>Gimme PIZZA!!</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>GIMME PIZZA!!</hi>
       </div>
       <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CJEoASUMZbI?autoplay=1" frameborder="0" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/CJEoASUMZbI?autoplay=1" frameborder="0" allowfullscreen></iframe> -->
       </div>
       <div class="row">
         <div class="col-xs-6">
-          <form id="newPizza">
+          <form id="newPizza" name="newPizza">
             <div class="form-group">
-              <label for = "pizzaSize">What size pie would you like?</label>
-              <Input type="text" class="form-control" id="pizzaSize">
+              <div id="pizzaSize">
+                <label for="pizzaSize">What size pie would you like?</label>
+                <div class="radio">
+                  <label><input name="pizzaSize" type="radio" value="small">Small</label>
+                </div>
+                <div class="radio">
+                  <label><input name="pizzaSize" type="radio" value="medium">Medium</label>
+                </div>
+                <div class="radio">
+                  <label><input name="pizzaSize" type="radio" value="large">Large</label>
+                </div>
+              </div>
             </div>
+
             <div class="form-group">
-              <label for = "toppings">What toppings would you like on your pie?</label>
-              <Input type="text" class="form-control" id="toppings">
+              <div id="toppings">
+                <label for="toppings">What toppings would you like on your pie?</label>
+                <div class="radio">
+                  <label><input name="toppings" type="radio" value="fishSticks">Fish Sticks</label>
+                </div>
+                <div class="radio">
+                  <label><input name="toppings" type="radio" value="iceCream">Ice Cream</label>
+                </div>
+                <div class="radio">
+                  <label><input name="toppings" type="radio" value="spaghetti">Spaghetti</label>
+                </div>
+              </div>
             </div>
             <button type="submit" class="btn-warning btn-md" id="addPizza">Submit Order</button>
-          </form>
-        </div>
+          </div>
+
+        </form>
+
         <div class="col-xs-6">
           <br>
           <h5><b><em>Sizes</em></b>~<br>Small(12") - Medium(16") - Large(20")</h5>
@@ -36,9 +59,36 @@
           <h5><b><em>Toppings</em></b>~<br>Fish Sticks, Ice Cream, Spaghetti</h5>
         </div>
       </div>
-    <div>
-      <ul id="showPrice"></ul>
+
+      <br>
+      <br>
+      <div class="box">
+        <p id="showPrice"></p>
+      </div>
     </div>
-  </div>
   </body>
-</html>
+  </html>
+
+
+
+
+
+
+
+
+
+  <!-- ********************************************************************
+
+  <form id="newPizza">
+  <div class="form-group">
+  <label for = "pizzaSize">What size pie would you like?</label>
+  <Input type="text" class="form-control" id="pizzaSize">
+</div>
+<div class="form-group">
+<label for = "toppings">What toppings would you like on your pie?</label>
+<Input type="text" class="form-control" id="toppings">
+</div>
+<button type="submit" class="btn-warning btn-md" id="addPizza">Submit Order</button>
+</form>
+
+******************************************************************** -->
