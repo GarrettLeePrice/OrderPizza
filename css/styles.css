@@ -1,3 +1,9 @@
+.modal-content iframe{
+        margin: 0 auto;
+        display: block;
+    }
+
+
 .jumbotron {
   text-align: center;
   background-image: url("../img/pizzatile.jpg");
