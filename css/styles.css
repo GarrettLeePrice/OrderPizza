@@ -1,6 +1,16 @@
 .jumbotron {
   text-align: center;
+  background-image: url("../img/pizzatile.jpg");
+  margin-top: 20px;
 }
+
+body {
+  background-color: #f0ebfa;
+}
+
+/*.jumbotron .url {"../img/pizzatile.jpg"
+
+}*/
 
 .video {
   position: absolute;

@@ -17,3 +17,16 @@ function Pizza(size, toppings) {
     }
     return price;
   };
+
+  $(document).ready(function() {
+    $("#newPizza").submit(function(event) {
+      $("ul").empty();
+      event.preventDefault();
+      var inputtedSize = $("input#pizzaSize").val();
+      var inputtedToppings = $("input#toppings").val();
+
+      var myPizza = new Pizza(inputtedSize, inputtedToppings);
+      console.log(myPizza);
+      $("#showPrice").append("<li>" + myPizza.price() + "</li>");
+    });
+  });
