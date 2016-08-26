@@ -1,50 +1,54 @@
-.modal-content iframe{
-        margin: 0 auto;
-        display: block;
-    }
-
+.modal-content iframe {
+  margin: 0 auto;
+  display: block;
+}
 
 .jumbotron {
   text-align: center;
-  background-image: url("../img/pizzatile.jpg");
+  background-image: url(../img/pizzatile.jpg);
   margin-top: 20px;
 }
 
 .jumbotron h1 {
   font-size: 80pt;
-  color: pink;
-  text-shadow: purple: 50px;
+  color: #9900e6;
+  text-shadow: 12px 12px 30px #f7e6ff;
 }
 
 body {
-  background-color: #f0ebfa;
+  background-color: #eeccff;
+  background-image: url(../img/pizza-background.gif);
 }
-
-/*.jumbotron .url {"../img/pizzatile.jpg"
-
-}*/
 
 .video {
   position: absolute;
   margin: auto;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   max-width: 100%;
   max-height: 100%;
 }
 
 .box {
-   width: 115px;
-   height: 50px;
-   border:1px solid purple;
-   background-color: pink;
+  width: 115px;
+  height: 50px;
+  border: 1px solid #9900e6;
+  background-color: #ffc0cb;
 }
 
 p {
-  color: purple;
+  color: #9900e6;
   padding-top: 7px;
   font-size: 14pt;
   font-style: italic:bold;
   text-align: center;
+}
+
+h5 {
+  color:black;
+}
+
+label {
+  color:black;
 }

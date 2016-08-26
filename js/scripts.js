@@ -39,21 +39,3 @@ $(document).ready(function() {
         $("#showPrice").text(" TOTAL $" + myPizza.price());
     });
 });
-
-
-
-
-
-
-//
-// ********************************************************************
-// $(document).ready(function() {
-//   $("#newPizza").submit(function(event) {
-//     $("ul").empty();
-//     event.preventDefault();
-//     var size = $("input:radio[name=pizzaSize]:checked").val();
-//     var toppings = $("input:radio[name=toppings]:checked").val();
-//     var myPizza = new Pizza(size,toppings);
-//     $("#showPrice").text(" TOTAL $" + myPizza.price());
-//   });
-// }); ********************************************************************
